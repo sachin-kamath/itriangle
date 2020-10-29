@@ -1,0 +1,86 @@
+.clients-grid, .testimonials-grid {
+    list-style: none;
+    overflow: hidden;
+}
+.clients-grid.grid-4 li {
+    width: 25%;
+}
+.clients-grid li, .testimonials-grid li {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding: 20px 0;
+    -webkit-backface-visibility: hidden;
+}
+.clients-grid li:before, .testimonials-grid li:before {
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-left: 1px dashed #DDD;
+}
+
+.clients-grid li:before, .clients-grid li:after, .testimonials-grid li:before, .testimonials-grid li:after {
+    content: '';
+    position: absolute;
+}
+
+body:not(.device-touch) .clients-grid li a {
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.clients-grid li a, .clients-grid li img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-grid li a {
+    opacity: 0.6;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.clients-grid li a img {
+    width: 100%;
+	
+}
+
+.clients-grid li a, .clients-grid li img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-grid li:after {
+    width: 100%;
+    height: 0;
+    top: auto;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px dashed #DDD;
+}
+.clients-grid li:before, .clients-grid li:after {
+    content: '';
+    position: absolute;
+}
+
+.clients-grid li a:hover {
+    opacity: 1;
+	filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.clients-grid li {
+    margin: 0;
+    padding: 0;
+	cursor: pointer;
+}
+.clients-grid {
+    margin: 0;
+    padding: 0;
+	cursor: pointer;
+}

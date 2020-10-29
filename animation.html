@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .ani {
+                background: url(http://i.stack.imgur.com/iofJk.png);
+                color: #ecf2f9;
+                text-align: center;
+                -webkit-animation: bgscroll 100s infinite linear;
+            }
+
+            .header .container {
+                max-width: 400px;
+            }
+
+            @-webkit-keyframes bgscroll {
+                from {
+                    background-position: 0 0;
+                }
+
+                to {
+                    background-position: 0 -520px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="ani">
+            <div class="container">
+                <img src="" alt="Scrolling Genes" />
+            </div>
+            <h3> I'm a scientist. </h3>
+            <p> I worked at.... </p>
+        </div>
+    </body>
+
+</html>
